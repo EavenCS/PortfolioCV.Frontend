@@ -6,6 +6,6 @@ As a software developer, it's important to have an up-to-date and professional o
 
 
 ### The website design was advertised by Repo
-I have oriented myself to the design and the card sizes. 
+I have oriented myself to the design and the card sizes. <br>
 [Inspired Repository](https://github.com/llo7d/personal_site)
 
