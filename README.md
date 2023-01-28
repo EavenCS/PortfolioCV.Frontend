@@ -4,6 +4,8 @@ The page is not live yet. You can view it once you have downloaded Git.
 
 If you don't have Git, you can use my download guide. <br>
 [Click the link to go to the guide.](https://github.com/EavenCS/HowToDownloadGit)
+
+Enter this into your VS Code terminal to get the source code.
 ```
 $ git clone https://github.com/EavenCS/PortfolioCV.git
 ```
