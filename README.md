@@ -8,7 +8,7 @@ If you don't have Git, you can use my download guide. <br>
 
 Enter this into your VS Code terminal to get the source code.
 ```
-$ git clone https://github.com/EavenCS/PortfolioCV.git
+git clone https://github.com/EavenCS/PortfolioCV.git
 ```
 
 ## Why I have developed the site?
