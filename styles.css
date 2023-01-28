@@ -54,9 +54,7 @@ margin-top: -15mm;
     border-radius: 15px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     margin: -709px 100px -10px 610px;
-    margin-bottom
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap; 
 }
 
 .sidecard{
@@ -101,3 +99,51 @@ margin-top: -15mm;
     background-image: url('img/Background.jpg');
 
 }
+
+.volunteerCard {
+    display: flex;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    margin: 30px 150px 265px 610px;
+    background-color: white;
+    width: 650px;
+    height: 296px;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    flex-wrap: wrap;
+}
+
+.FeuerwehrPicFW {
+    padding: 15%;
+    margin-top: -25px;
+}
+.FeuerwehrPicAW {
+    margin-top: -3px;
+}
+
+.volunteerTextFW{
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    padding: 17%;
+    margin-top: -65px;
+    margin-left: 45px;
+}
+
+.volunteerTextWA{
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    padding: 17%;
+    margin-top: -65px;
+    margin-left: 45px;
+}
+
+.javPic{
+    margin-top: 1px;
+}
+.javPic img{
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+
+top margin is 25px
+right margin is 50px
+bottom margin is 75px
+left margin is 100px
