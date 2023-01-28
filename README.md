@@ -1,4 +1,5 @@
 # PortfolioCV
+EavenC is an older account of mine currently had the wrong email configured in Git.
 ## How can I see the page?
 The page is not live yet. You can view it once you have downloaded Git.
 
