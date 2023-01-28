@@ -35,6 +35,14 @@ margin-top: -15mm;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     flex-wrap: wrap;
 }
+
+.profil p{
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    margin-top: -95px;
+    padding: 10%;
+    line-height:2.5;
+}
+
 .aboutMeCard h3{
     padding: 15px;
 }
@@ -69,10 +77,27 @@ margin-top: -15mm;
     border-radius: 15px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-/.avatar {
-    vertical-align: middle;
-    width: 76px;
-    height: 76px;
-    border-radius: 90%;
-    margin:-380px 40px 322px 195px ;
+.avatar {
+    padding: 9%;
+    margin-top: -100px;
   }
+
+  .MailTo {
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    padding: 3mm;
+    margin-top: -18px;
+    text-decoration: none;
+    color:chocolate;
+  }
+  
+.card-image {
+    background-color: darkturquoise;
+    height: 150px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.background {
+    background-image: url('img/Background.jpg');
+
+}
