@@ -137,13 +137,8 @@ margin-top: -15mm;
 .javPic{
     margin-top: 1px;
 }
+
 .javPic img{
     border-radius: 50%;
     border: 2px solid black;
 }
-
-
-top margin is 25px
-right margin is 50px
-bottom margin is 75px
-left margin is 100px
