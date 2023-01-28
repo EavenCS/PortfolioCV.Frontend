@@ -2,8 +2,8 @@
 ## How can I see the page?
 The page is not live yet. You can view it once you have downloaded Git.
 
-If you don't have Git, you can use my download guide.
-
+If you don't have Git, you can use my download guide. <br>
+[Click the link to go to the guide.](https://github.com/EavenCS/HowToDownloadGit)
 ```
 $ git clone https://github.com/EavenCS/PortfolioCV.git
 ```
