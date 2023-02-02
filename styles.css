@@ -99,6 +99,12 @@ margin-top: -15mm;
 
 }
 
+.InfoschoolBBS2{
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    margin-left: -150px;
+}
+
+
 .volunteerCard {
     display: flex;
     font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
@@ -151,6 +157,11 @@ margin-top: -15mm;
     border-radius: 50%;
     border: 2px solid black;
 }
+.bbs2Image{
+    border-radius: 50%;
+    margin-top: -60px;
+    margin-left: 630px;
+}
 
 .fwText{
     font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
@@ -164,10 +175,22 @@ margin-top: -15mm;
     margin-top: 34px;
 }
 
+.InfoschoolBBS2{
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+margin-left: 140px;
+margin-bottom: 160px;
+}
+
 .JAVText{
     font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
     margin-left: 1110px;
     margin-top: 45px;
+}
+
+.educationText{
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    margin-left: 625px;
+    margin-top: -480px;
 }
 
 .hr1{
