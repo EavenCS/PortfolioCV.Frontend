@@ -1,5 +1,7 @@
 body {
     background-color: rgb(235, 228, 228);
+    flex-wrap: wrap;
+
   }
 
 .container{
@@ -10,18 +12,24 @@ body {
     margin-top: -11%;
     font-weight: 600;
     padding: 1mm;
+    flex-wrap: wrap;
+
 }
 
 .Location {
 font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 margin-left: 3.5mm;
 margin-top: -15mm;
+flex-wrap: wrap;
+
 }
 
 .cardheadline {
     font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
     padding:3.5mm;
     margin-top: -8%;
+    flex-wrap: wrap;
+
 }
 
 .profil{
@@ -40,10 +48,14 @@ margin-top: -15mm;
     margin-top: -95px;
     padding: 10%;
     line-height:2.5;
+    flex-wrap: wrap;
+
 }
 
 .aboutMeCard h3{
     padding: 15px;
+    flex-wrap: wrap;
+
 }
 .aboutMeCard{
     font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
@@ -73,10 +85,14 @@ margin-top: -15mm;
     height: 296px;
     border-radius: 15px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    flex-wrap: wrap;
+
 }
 .avatar {
     padding: 9%;
     margin-top: -100px;
+    flex-wrap: wrap;
+
 }
 
   .MailTo {
@@ -88,21 +104,34 @@ margin-top: -15mm;
 }
   
 .card-image {
-    background-color: darkturquoise;
+    background-color: rgb(1, 1, 1);
     height: 150px;
     background-size: cover;
     border-radius: 15px 15px 0 0;
+    flex-wrap: wrap;
+
 }
 
 .background {
     background-image: url('img/Background.jpg');
+    flex-wrap: wrap;
+
 
 }
 
 .InfoschoolBBS2{
     font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    margin-left: -150px;
+    margin-right: -112px;
+    flex-wrap: wrap;
+
 }
+.InfoschoolSecLvl2{
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    margin-left: 675px;
+    flex-wrap: wrap;
+
+}
+
 
 
 .volunteerCard {
@@ -113,13 +142,14 @@ margin-top: -15mm;
     width: 650px;
     height: 296px;
     border-radius: 15px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: hsla(240, 30%, 28%, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     flex-wrap: wrap;
 }
 
 .educationCard{
     width: 650px;
     height: 205px;
+    flex-wrap: wrap;
     margin: 30px -150px 26px 610px;
     background-color: white;
     border-radius: 15px;
@@ -149,6 +179,16 @@ margin-top: -15mm;
     margin-left: 45px;
 }
 
+.resumeCard{
+    width: 650px;
+    height: 360px;
+    margin: 30px -150px 26px 610px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
 .javPic{
     margin-top: 1px;
 }
@@ -176,7 +216,7 @@ margin-top: -15mm;
 }
 
 .InfoschoolBBS2{
-    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 margin-left: 140px;
 margin-bottom: 160px;
 }
