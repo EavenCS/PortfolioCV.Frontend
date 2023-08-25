@@ -19,3 +19,7 @@ As a software developer, it's important to have an up-to-date and professional o
 I have oriented myself to the design and the card sizes. <br>
 [Inspired Repository](https://github.com/llo7d/personal_site)
 
+# ToDo
+-Replacing text with JavaScript objects
+-Adding chips in the skill card
+
