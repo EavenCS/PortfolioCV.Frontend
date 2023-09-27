@@ -21,6 +21,6 @@ I have oriented myself to the design and the card sizes. <br>
 
 # ToDo
 -Replacing text with JavaScript objects <br>
--Adding chips in the skill card
+-Adding chips in the skill card <br>
 -Fix UI
 
