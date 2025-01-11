@@ -1,89 +1,259 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Home | Eaven</title>
-        <link rel="icon" type="image/x-icon" href="/img/favIcon.png">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <section class="Container">
-                <div class="profil">
-                    <div class="card-image background"></div>
-                        <div class="avatar"><img alt="html image example" src="img/avatar3.png" width="105" height="105" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Eaven Schmalz - Software Developer">
+    <meta property="og:description" content="Portfolio of Eaven Schmalz - Full Stack Developer">
+    <meta property="og:image" content="/img/avatar3.png">
+    <title>Home | Eaven</title>
+    <link rel="icon" type="image/x-icon" href="/img/favIcon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Share Button -->
+    <button id="shareButton" class="share-button" aria-label="Share">
+        <i class="fas fa-share-alt"></i>
+    </button>
+
+    <!-- Dark Mode Toggle -->
+    <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle Dark Mode">
+        🌓
+    </button>
+
+    <!-- Share Modal -->
+    <div id="shareModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Share Profile</h3>
+            <div class="share-options">
+                <button class="share-option" data-platform="linkedin">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </button>
+                <button class="share-option" data-platform="twitter">
+                    <i class="fab fa-twitter"></i> Twitter
+                </button>
+                <button class="share-option" data-platform="email">
+                    <i class="fas fa-envelope"></i> Email
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <!-- Profile Card -->
+            <div class="card profile-card">
+                <div class="profile-header">
+                    <div class="background-image"></div>
+                    <img src="/img/avatar3.png" alt="Eaven Schmalz" class="avatar">
+                </div>
+                <div class="profile-info">
+                    <h2>Eaven Schmalz</h2>
+                    <p>Software Developer</p>
+                    <p>Full Stack Development & Business Solutions</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:eaven@eschmalz.de"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <!-- Information Card -->
+            <div class="card info-card">
+                <h3>Information</h3>
+                <div class="info-grid">
+                    <span>Location</span>
+                    <span>Göttingen</span>
+                    <span>Experience</span>
+                    <span data-start-date="2020-08-01">3+ years</span>
+                    <span>Current</span>
+                    <span>Volkswagen Group Services</span>
+                </div>
+            </div>
+
+            <!-- Skills Card -->
+            <div class="card skills-card">
+                <h3>Skills</h3>
+                <div class="skills-container">
+                    <!-- Development -->
+                    <div class="skills-category">
+                        <h4>Development</h4>
+                        <div class="skills-grid">
+                            <div class="skill-item" data-category="Development">
+                                <div class="skill-header">
+                                    <i class="fas fa-code"></i>
+                                    <span>ASP.NET Core & WPF</span>
+                                </div>
+                                <div class="skill-level intermediate">Intermediate</div>
+                            </div>
+                            <div class="skill-item" data-category="Development">
+                                <div class="skill-header">
+                                    <i class="fab fa-microsoft"></i>
+                                    <span>Microsoft Dynamics 365</span>
+                                </div>
+                                <div class="skill-level intermediate">Intermediate</div>
+                            </div>
+                            <div class="skill-item" data-category="Development">
+                                <div class="skill-header">
+                                    <i class="fab fa-cuttlefish"></i>
+                                    <span>C#</span>
+                                </div>
+                                <div class="skill-level intermediate">Intermediate</div>
+                            </div>
+                            <div class="skill-item" data-category="Development">
+                                <div class="skill-header">
+                                    <i class="fab fa-js"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="skill-level beginner">Beginner</div>
+                            </div>
                         </div>
-                    <br>
-                    <p style="font-weight: bold;">Eaven Schmalz</p>
-                    <p style="color:rgb(79, 77, 77);"> Software Developer</p>
-                </div>
-                <div class="sidecard">
-                    <div class="cardheadline"><h3>Information</h3></div>
-                    <div class="Location" style="color:rgb(79, 77, 77);" ><p>Location &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Göttingen</p></div>
-                    <div class="Location" style="color:rgb(79, 77, 77);" ><p>Experience  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     3+ years</p></div>
-                    <div class="Location" style="color:rgb(79, 77, 77);"><p>Employer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sycor GmbH</p></div>
-                </div>
-                <div class="sidecard">
-                    <div class="cardheadline"><h3>Skills</h3></div> 
-                    <p></p>    
-                </div>
-                <div class="aboutMeCard">
-                   <h3>About Me</h3>
-                        <div class="cardheadline"><div class="aboutText"></div>
-                            <p style="color:rgb(79, 77, 77);">In 2020, I successfully completed my upper secondary school leaving certificate and started my training as an application developer on 01.08.2020. 😊🎓
+                    </div>
 
-                                I successfully completed my training on 20.06.2023. During my training period, my focus was on programming the ERP solution Microsoft Dynamics 365. I was excited to learn about this exciting technology and how to use it effectively. 🤓💻
-                                
-                                I look forward to expanding my skills and knowledge in this field and building my future in the IT industry! 💪🚀</p> 
-                         </div>
-
-                         <div class="aboutMeCard">
-
-                         </div>
-
-                         <div class="MailTo"><a href="mailto:eaven@eschmalz.de?subject"=Kontakt%mit%Eaven><span style="text-decoration: none">eaven@eschmalz.de</span></a>
-                         <style>
-                            a{text-decoration: none;
-                            font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;}
-                         </style>
+                    <!-- DevOps -->
+                    <div class="skills-category">
+                        <h4>DevOps</h4>
+                        <div class="skills-grid">
+                            <div class="skill-item" data-category="DevOps">
+                                <div class="skill-header">
+                                    <i class="fab fa-git-alt"></i>
+                                    <span>Git</span>
+                                </div>
+                                <div class="skill-level intermediate">Intermediate</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="Icons">
-                        <Icons class="fa-brands fa-github"></Icons>
-                        <Icons class="fa-brands fa-linkedin"></Icons>
-                        <Icons class="fa-brands fa-instagram"></Icons>
-                        <Icons class="fa-brands fa-twitter"></Icons>
-                    </div>
-                    <div class="educationCard">
-                        <img src="img/obsl.jpg" alt="Logo der Bildungseinrichtung" class="educationLogo" />
-                        <!-- Weitere Inhalte der educationCard hier -->
-                    </div>
-                    
-                    <div class="volunteerCard">
-                        <div class="Resume"><div class="aboutText"></div>
-                        <div class="cardheadline"><h3>Volunteer</h3></div> 
-                        <div class="FeuerwehrPicFW"><img alt="html image example" src="img/FeuerwehrLogo.jfif" width="50" height="50"/>
-                        <div class="volunteerTextFW" style="font-weight: 600;">Feuerwehrmann</div> 
-                        <div class="FeuerwehrPicAW"><img alt="html image example" src="img/FeuerwehrLogo.jfif" width="50" height="50"/>
-                        <div class="volunteerTextWA" style="font-weight: 600;">Webseiten&nbsp;Admin</div>
-                        <div class="javPic"><img alt="" src="img/javPic.jpg" width="45" height="45"/>
-                        <div class="volunteerTextWA" style="font-weight: 600;">JAV&nbsp;bei&nbsp;der&nbsp;Sycor&nbsp;GmbH&nbsp;</div>
-                    </div>
+
+                    <!-- Databases -->
+                    <div class="skills-category">
+                        <h4>Databases</h4>
+                        <div class="skills-grid">
+                            <div class="skill-item" data-category="Database">
+                                <div class="skill-header">
+                                    <i class="fas fa-database"></i>
+                                    <span>SQL</span>
+                                </div>
+                                <div class="skill-level intermediate">Intermediate</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </section>
-            <div class="fwText"><p style="color:rgb(79, 77, 77);" >Oct. 2019-Today</p></div> 
-            <div class="WAText"><p style="color:rgb(79, 77, 77);" >Feb. 2021-Today</p></div>
-            <div class="JAVText"><p style="color:rgb(79, 77, 77);" >Oct. 2022-Today</p></div>
-             <!--<div class="hr1"><hr style="border-width: 1.8px;" width="500"></div> --> 
-             <div class="educationText"><h3>Education</h3></div> 
-             <div class="obsImage"><img alt="html image example" src="/img/obsl.jpg" width="50" height="50"/></div>
-             <div class="bbs2Image"><img alt="html image example" src="img/bbs2.jfif" width="50" height="50"/></div>
+            </div>
+        </div>
 
-             <div class="InfoschoolBBS2"><p>Training, computer programming, specific applications</p></div>
-             <div class="InfoschoolSecLvl2"><p>Student, Secondary level II</p></div>
-             
+        <div class="main-content">
+            <!-- About Me Card -->
+            <div class="card about-card">
+                <h3>About Me</h3>
+                <p>I am a dedicated software developer with a strong foundation in business applications and full-stack development. In 2020, I embarked on my journey in software development through an apprenticeship program, which I successfully completed in June 2023. 🎓</p>
+                <p>My expertise lies in developing enterprise solutions, particularly with Microsoft Dynamics 365 and .NET technologies. I am passionate about creating efficient, user-friendly applications that solve real business challenges. 💻</p>
+                <p>Currently advancing my career at Volkswagen Group Services, I am focused on expanding my skills in modern web development and enterprise software architecture while contributing to innovative projects. 🚀</p>
+                <a href="mailto:eaven@eschmalz.de" class="contact-email">eaven@eschmalz.de</a>
+            </div>
 
+            <!-- Work Experience Card -->
+            <div class="card experience-card">
+                <h3>Work Experience</h3>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Full Stack Software Developer</h4>
+                        <p>Volkswagen Group Services GmbH</p>
+                        <p>Development of Web APIs using ASP.NET Core and desktop applications with WPF in C#. Focus on creating robust enterprise solutions and implementing modern software architecture patterns.</p>
+                        <span class="timeline-date">May 2024 - Present</span>
+                    </div>
+                </div>
 
-    </body>
-    <footer>
-    </footer>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Software Developer</h4>
+                        <p>Sycor GmbH</p>
+                        <p>Development and maintenance of Microsoft Dynamics 365 solutions, implementing custom requirements, and automating business processes. Specialized in creating efficient and scalable business applications.</p>
+                        <span class="timeline-date">June 2023 - April 2024</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Application Developer Apprentice</h4>
+                        <p>Sycor GmbH</p>
+                        <p>Comprehensive training in Microsoft Dynamics 365 development, business solutions, and customer project participation. Mastered programming languages including C#, X++, and SQL while developing practical business applications.</p>
+                        <span class="timeline-date">August 2020 - June 2023</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certificates Card -->
+            <div class="card certificates-card">
+                <h3>Certificates</h3>
+
+                <div class="certificate-item">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certificate-info">
+                        <h4>W3Schools Certified: C# Developer</h4>
+                        <p>W3Schools</p>
+                    </div>
+                    <div class="certificate-date">2023</div>
+                </div>
+
+                <div class="certificate-item">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certificate-info">
+                        <h4>W3Schools Certified: SQL Developer</h4>
+                        <p>W3Schools</p>
+                    </div>
+                    <div class="certificate-date">2023</div>
+                </div>
+            </div>
+
+            <!-- Volunteer Card -->
+            <div class="card volunteer-card">
+                <h3>Volunteer Work</h3>
+                <div class="volunteer-item">
+                    <img src="/img/FeuerwehrLogo.jfif" alt="Firefighter">
+                    <div class="volunteer-info">
+                        <h4>Volunteer Firefighter</h4>
+                        <p>Active member of the local fire department, participating in emergency response operations and community safety initiatives. Contributing to public safety through regular training and emergency response activities.</p>
+                        <p class="volunteer-date">October 2019 - Present</p>
+                    </div>
+                </div>
+                <div class="volunteer-item">
+                    <img src="/img/FeuerwehrLogo.jfif" alt="Website Admin">
+                    <div class="volunteer-info">
+                        <h4>Fire Department Website Administrator</h4>
+                        <p>Lead the development and maintenance of the fire department's digital presence. Responsible for implementing modern web solutions and ensuring effective communication of emergency information to the public.</p>
+                        <p class="volunteer-date">February 2021 - Present</p>
+                    </div>
+                </div>
+                <div class="volunteer-item">
+                    <img src="/img/javPic.jpg" alt="Youth Representative">
+                    <div class="volunteer-info">
+                        <h4>Youth Representative at Sycor GmbH</h4>
+                        <p>Served as an advocate for young professionals and apprentices, organizing professional development events and maintaining communication between management and trainees to enhance the learning experience.</p>
+                        <p class="volunteer-date">October 2022 - Present</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
 </html>

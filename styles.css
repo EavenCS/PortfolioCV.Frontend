@@ -1,251 +1,517 @@
 :root {
-    --background-Color: rgb(235, 228, 228);
-    --box-Shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    --card-bg: white;
+    --text-gray: rgb(79, 77, 77);
+    --background: rgb(235, 228, 228);
+    --card-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    --primary-color: #4a90e2;
+    --border-radius: 15px;
+    --spacing-sm: 10px;
+    --spacing-md: 20px;
+    --spacing-lg: 30px;
+    --text-primary: #2d3748;
+    --border-color: #e2e8f0;
 }
 
+/* Base Styles */
 body {
-    background-color: var(--background-Color);
+    background-color: var(--background);
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+    margin: 0;
+    padding: var(--spacing-md);
+    line-height: 1.6;
 }
 
+/* Layout */
 .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-.aboutMeCard h3 {
-    margin-top: -11%;
-    font-weight: 600;
-    padding: 1mm;
-    flex-wrap: wrap;
-
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: var(--spacing-md);
 }
 
-.Location {
-font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-margin-left: 3.5mm;
-margin-top: -15mm;
-flex-wrap: wrap;
-
+/* Card Base */
+.card {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-md);
+    box-shadow: var(--card-shadow);
+    margin-bottom: var(--spacing-md);
 }
 
-.cardheadline {
-    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    padding:3.5mm;
-    margin-top: -8%;
-    flex-wrap: wrap;
-
+/* Profile Section */
+.profile-header {
+    position: relative;
+    margin: calc(-1 * var(--spacing-md)) calc(-1 * var(--spacing-md)) 0;
 }
 
-.profil{
-    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    margin: 19px 350px 10px 280px;
-    background-color: white;
-    width: 314px;
-    height: 266px;
-    border-radius: 15px;
-    box-shadow: var(--box-Shadow);
-    flex-wrap: wrap;
+.background-image {
+    height: 120px;
+    background: linear-gradient(45deg, var(--primary-color), #63b3ed);
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
-.profil p{
-    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    margin-top: -95px;
-    padding: 10%;
-    line-height:2.5;
-    flex-wrap: wrap;
-
-}
-
-.aboutMeCard h3{
-    padding: 15px;
-    flex-wrap: wrap;
-
-}
-.aboutMeCard{
-    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    background-color:white;
-    width: 650px;
-    height: 296px;
-    border-radius: 15px;
-    box-shadow: var(--box-Shadow);
-    margin: -709px 100px -10px 610px;
-    flex-wrap: wrap; 
-}
-
-.sidecard{
-    display: flex;
-    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    margin: 15px 150px 13px 280px;
-    background-color: white;
-    width: 314px;
-    height: 200px;
-    border-radius: 15px;
-    box-shadow: var(--box-Shadow);
-    flex-wrap: wrap;
-}
-.card{
-    background-color: var(--background-Color);
-    width: 650px;
-    height: 296px;
-    border-radius: 15px;
-    box-shadow:var(--box-Shadow);
-    flex-wrap: wrap;
-
-}
 .avatar {
-    padding: 9%;
-    margin-top: -100px;
-    flex-wrap: wrap;
-
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid white;
+    position: absolute;
+    bottom: -50px;
+    left: var(--spacing-md);
+    object-fit: cover;
 }
 
-  .MailTo {
-    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    padding: 3mm;
-    margin-top: -18px;
-    text-decoration: none;
-    color:chocolate;
-}
-  
-.card-image {
-    background-color: rgb(1, 1, 1);
-    height: 150px;
-    background-size: cover;
-    border-radius: 15px 15px 0 0;
-    flex-wrap: wrap;
-
+.profile-info {
+    margin-top: 60px;
+    padding: var(--spacing-sm);
 }
 
-.background {
-    background-image: url('img/Background.jpg');
-    flex-wrap: wrap;
-
-
+.profile-info h2 {
+    margin: 0;
+    color: #2d3748;
 }
 
-.InfoschoolBBS2{
-    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    margin-right: -112px;
-    flex-wrap: wrap;
-
-}
-.InfoschoolSecLvl2{
-    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    margin-left: 675px;
-    flex-wrap: wrap;
-
+.profile-info p {
+    color: var(--text-gray);
+    margin: 5px 0;
 }
 
-
-
-.volunteerCard {
+/* Social Links */
+.social-links {
     display: flex;
-    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    margin: 30px 145px 265px 610px;
-    background-color: white;
-    width: 650px;
-    height: 296px;
-    border-radius: 15px;
-    box-shadow: var(--box-Shadow);
-    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+    justify-content: center;
 }
 
-.educationCard{
-    width: 650px;
-    height: 205px;
-    flex-wrap: wrap;
-    margin: 30px -150px 26px 610px;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: var(--box-Shadow);
-    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+.social-links a {
+    color: var(--text-gray);
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
 }
 
-.FeuerwehrPicFW {
-    padding: 15%;
-    margin-top: -25px;
-}
-.FeuerwehrPicAW {
-    margin-top: -3px;
+.social-links a:hover {
+    color: var(--primary-color);
+    transform: translateY(-2px);
 }
 
-.volunteerTextFW{
-    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    padding: 17%;
-    margin-top: -65px;
-    margin-left: 45px;
+/* Information Grid */
+.info-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--spacing-sm);
+    color: var(--text-gray);
+    padding: var(--spacing-sm);
 }
 
-.volunteerTextWA{
-    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    padding: 17%;
-    margin-top: -65px;
-    margin-left: 45px;
+/* Skills Section */
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
 }
 
-.resumeCard{
-    width: 650px;
-    height: 360px;
-    margin: 30px -150px 26px 610px;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: var(--box-Shadow);
-    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+.skills-category h4 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.1em;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
 }
 
-.javPic{
-    margin-top: 1px;
+.skills-grid {
+    display: grid;
+    gap: var(--spacing-sm);
 }
 
-.javPic img{
+.skill-item {
+    background: #f8fafc;
+    padding: var(--spacing-sm);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.skill-header i {
+    color: var(--primary-color);
+    font-size: 1.2em;
+}
+
+.skill-level {
+    font-size: 0.9em;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.skill-level.expert {
+    background-color: #c6f6d5;
+    color: #2f855a;
+}
+
+.skill-level.advanced {
+    background-color: #e9d8fd;
+    color: #6b46c1;
+}
+
+.skill-level.intermediate {
+    background-color: #feebc8;
+    color: #c05621;
+}
+
+/* Timeline */
+.timeline-item {
+    display: flex;
+    margin-bottom: var(--spacing-md);
+    position: relative;
+    padding-left: 60px;
+}
+
+.timeline-icon {
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    border: 2px solid black;
+    background: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
 }
-.bbs2Image{
+
+.timeline-content {
+    margin-left: 20px;
+}
+
+.timeline-content h4 {
+    margin: 0;
+    color: var(--text-primary);
+}
+
+.timeline-content p {
+    margin: 5px 0;
+    color: var(--text-gray);
+}
+
+.timeline-date {
+    color: var(--text-gray);
+    font-size: 0.9em;
+}
+
+/* Certificates */
+.certificate-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.certificate-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7fafc;
+    border-radius: 8px;
+    margin-right: var(--spacing-sm);
+}
+
+.certificate-info {
+    flex: 1;
+}
+
+.certificate-info h4 {
+    margin: 0;
+    color: var(--text-primary);
+}
+
+/* Volunteer Section */
+.volunteer-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-sm);
+    transition: all 0.2s ease;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.volunteer-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.volunteer-item:hover {
+    transform: translateY(-2px);
+    background: #f8fafc;
+    border-radius: 8px;
+}
+
+.volunteer-item img {
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    margin-top: -60px;
-    margin-left: 630px;
+    margin-right: var(--spacing-sm);
+    object-fit: cover;
 }
 
-.fwText{
-    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    margin-left: 1110px;
-    margin-top: -464px;
+.volunteer-info h4 {
+    margin: 0;
+    color: var(--text-primary);
 }
 
-.WAText{
-    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    margin-left: 1110px;
-    margin-top: 34px;
+.volunteer-info p {
+    margin: 5px 0;
+    color: var(--text-gray);
 }
 
-.InfoschoolBBS2{
-font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-margin-left: 140px;
-margin-bottom: 160px;
+/* Dark Theme */
+.dark-theme {
+    --card-bg: #1a1c23;
+    --text-gray: #a0aec0;
+    --background: #111827;
+    --card-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    --text-primary: #e2e8f0;
+    --border-color: #2d3748;
 }
 
-.JAVText{
-    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    margin-left: 1110px;
-    margin-top: 45px;
+.dark-theme .card {
+    background: var(--card-bg);
 }
 
-.educationText{
-    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    margin-left: 625px;
-    margin-top: -480px;
-}
-.educationLogo {
-    width: 50px; 
-    height: auto; 
-    margin: 3%; 
-    margin-top: 15%;
+.dark-theme h2,
+.dark-theme h3,
+.dark-theme h4 {
+    color: var(--text-primary);
 }
 
-.hr1{
-    margin-top: -120px;
+.dark-theme .skill-item {
+    background: #252836;
+}
+
+.dark-theme .certificate-item {
+    border-color: var(--border-color);
+    background: var(--card-bg);
+}
+
+.dark-theme .certificate-icon {
+    background: #252836;
+    color: var(--text-primary);
+}
+
+.dark-theme .skill-level.expert {
+    background-color: #2f855a;
+    color: #c6f6d5;
+}
+
+.dark-theme .skill-level.advanced {
+    background-color: #6b46c1;
+    color: #e9d8fd;
+}
+
+.dark-theme .skill-level.intermediate {
+    background-color: #c05621;
+    color: #feebc8;
+}
+
+.dark-theme .volunteer-item:hover {
+    background: #252836;
+}
+
+/* Utility Buttons */
+.share-button,
+.dark-mode-toggle {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.dark-mode-toggle {
+    bottom: 20px;
+    right: 20px;
+    background: white;
+}
+
+.share-button {
+    bottom: 80px;
+    right: 20px;
+    background: var(--primary-color);
+    color: white;
+}
+
+.dark-theme .dark-mode-toggle {
+    background: #252836;
+    color: #e2e8f0;
+}
+
+/* Toast Notification */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2d3748;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1002;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.toast.show {
+    opacity: 1;
+}
+
+/* Share Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-gray);
+}
+
+.share-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.share-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #f8fafc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dark-theme .share-option {
+    background: #252836;
+    color: var(--text-primary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        order: 1;
+    }
+
+    .main-content {
+        order: 2;
+    }
+
+    .timeline-item {
+        padding-left: 50px;
+    }
+
+    .share-options {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: var(--spacing-sm);
+    }
+
+    .card {
+        padding: var(--spacing-sm);
+    }
+
+    .volunteer-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .volunteer-item img {
+        margin-bottom: var(--spacing-sm);
+        margin-right: 0;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .share-button,
+    .dark-mode-toggle {
+        display: none;
+    }
+
+    .card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #e2e8f0;
+    }
 }
