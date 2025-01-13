@@ -172,34 +172,41 @@ const initVolunteerHover = () => {
     });
 };
 
-// Initialize all features
+// Pageview Counter
+const initPageViewCounter = () => {
+    fetch("https://api.countapi.xyz/hit/eavencs.github.io.PortfolioCV/visits")
+        .then(response => response.json())
+        .then(data => {
+            const visitCount = document.getElementById('visit-count');
+            if (visitCount) {
+                visitCount.innerText = data.value.toLocaleString();
+            }
+        })
+        .catch(error => {
+            console.error("Error fetching the page view counter:", error);
+            const visitCount = document.getElementById('visit-count');
+            if (visitCount) {
+                visitCount.innerText = '...';
+            }
+        });
+};
+
+
 document.addEventListener('DOMContentLoaded', () => {
+    // Feature Initialisierung
     initSkillAnimation();
     updateDynamicDates();
     initCertificateAnimation();
     initShareFeature();
     initSmoothScroll();
     initVolunteerHover();
+    initPageViewCounter();
     
-    // Update dates periodically
-    setInterval(updateDynamicDates, 1000 * 60 * 60); // Update every hour
+    setInterval(updateDynamicDates, 1000 * 60 * 60); 
 });
 
-// Handle visibility changes
 document.addEventListener('visibilitychange', () => {
     if (!document.hidden) {
         updateDynamicDates();
     }
 });
-
-async function updateVisitCount() {
-    try {
-        const response = await fetch('https://api.countapi.xyz/hit/eavencs.github.io/visits');
-        const data = await response.json();
-        document.getElementById('visit-count').textContent = data.value;
-    } catch (error) {
-        console.error('Error updating visit count:', error);
-    }
-}
-
-document.addEventListener('DOMContentLoaded', updateVisitCount);
