@@ -191,3 +191,15 @@ document.addEventListener('visibilitychange', () => {
         updateDynamicDates();
     }
 });
+
+async function updateVisitCount() {
+    try {
+        const response = await fetch('https://api.countapi.xyz/hit/eavencs.github.io/visits');
+        const data = await response.json();
+        document.getElementById('visit-count').textContent = data.value;
+    } catch (error) {
+        console.error('Error updating visit count:', error);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', updateVisitCount);
