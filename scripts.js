@@ -172,26 +172,6 @@ const initVolunteerHover = () => {
     });
 };
 
-// Pageview Counter
-const initPageViewCounter = () => {
-    fetch("https://api.countapi.xyz/hit/eavencs.github.io.PortfolioCV/visits")
-        .then(response => response.json())
-        .then(data => {
-            const visitCount = document.getElementById('visit-count');
-            if (visitCount) {
-                visitCount.innerText = data.value.toLocaleString();
-            }
-        })
-        .catch(error => {
-            console.error("Error fetching the page view counter:", error);
-            const visitCount = document.getElementById('visit-count');
-            if (visitCount) {
-                visitCount.innerText = '...';
-            }
-        });
-};
-
-
 document.addEventListener('DOMContentLoaded', () => {
     // Feature Initialisierung
     initSkillAnimation();
