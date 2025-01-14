@@ -19,3 +19,11 @@ As a software developer, it's important to have an up-to-date and professional o
 I have oriented myself to the design and the card sizes. <br>
 [Inspired Repository](https://github.com/llo7d/personal_site)
 
+## Todo
+
+ - [ ] Add API
+ - [ ] More Animations
+
+
+
+
