@@ -24,6 +24,7 @@ I have oriented myself to the design and the card sizes. <br>
  - [ ] Add API
  - [ ] More Animations
  - [ ] Implement Blog function
+ - [ ]  Darkmode
 
 
 
