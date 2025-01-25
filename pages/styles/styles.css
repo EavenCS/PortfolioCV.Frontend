@@ -716,16 +716,25 @@ body {
 }
 
 .footer {
-    margin-top: auto;
-    padding: 15px 0;
+    padding: 20px;
     text-align: center;
-    color: var(--text-gray);
-    font-size: 0.9em;
+    font-family: Arial, sans-serif; 
+    color: #555;
 }
 
-.footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+.footer-content span {
+    display: block
+    font-size: 14px;
+    margin: 5px 0; 
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold; 
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+    color: #005bb5; 
 }
