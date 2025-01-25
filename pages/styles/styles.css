@@ -723,7 +723,7 @@ body {
 }
 
 .footer-content span {
-    display: block
+    display: block;
     font-size: 14px;
     margin: 5px 0; 
 }
